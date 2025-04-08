@@ -1,2 +1,4 @@
 #include <avr/io.h>
 #include <util/delay.h>
+DDRC=0xFF;
+PORDC|=~(1<<5);
