@@ -6,9 +6,9 @@ int main(void)
 {
 	while
 		{
-			PORDC&=~(1<<5);
-			_delay_ms(200);
-			PORDC|=(1<<5);
-			_delay_ms(200);
+		PORDC&=~(1<<5);
+		_delay_ms(200);
+		PORDC|=(1<<5);
+		_delay_ms(200);
 		}
 }
