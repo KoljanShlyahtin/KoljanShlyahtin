@@ -1,8 +1,14 @@
 #include <avr/io.h>
 #include <util/delay.h>
 DDRC=0xFF;
-PORDC|=~(1<<5);
+PORDC|=(1<<5);
 int main(void)
 {
-
+	while
+		{
+			PORDC&=~(1<<5);
+			_delay_ms(200);
+			PORDC|=(1<<5);
+			_delay_ms(200);
+		}
 }
